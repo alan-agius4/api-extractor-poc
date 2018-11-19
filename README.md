@@ -25,5 +25,5 @@ src/utils/strings.d.ts(74,9): Expecting a TSDoc tag starting with "{@"
 src/virtual-fs/host/alias.d.ts(54,22): The ">" character should be escaped using a backslash to avoid confusion with an HTML tag
 src/json/schema/visitor.d.ts(30,38): The "}" character should be escaped using a backslash to avoid confusion with a TSDoc inline tag
 ```
-- `The TSDoc tag "@license" is not defined in this configuration`. Ut seems there is no way to actually configure this. 
+- `The TSDoc tag "@license" is not defined in this configuration`. It seems there is no way to actually configure this. 
 
