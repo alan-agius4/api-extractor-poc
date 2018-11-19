@@ -1,4 +1,4 @@
-#@microsoft/api-extractor POC
+# @microsoft/api-extractor POC
 
 This is a POC of the API Extractor running against `@angular-devkit/core`.
 
