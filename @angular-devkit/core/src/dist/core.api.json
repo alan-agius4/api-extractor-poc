@@ -1,0 +1,4021 @@
+{
+  "kind": "package",
+  "name": "@angular-devkit/core",
+  "summary": [],
+  "remarks": [],
+  "exports": {
+    "asPosixPath": {
+      "kind": "function",
+      "signature": "export function asPosixPath(path: Path): PosixPath;",
+      "returnValue": {
+        "type": "PosixPath",
+        "description": []
+      },
+      "parameters": {
+        "path": {
+          "name": "path",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "Path"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false
+    },
+    "asWindowsPath": {
+      "kind": "function",
+      "signature": "export function asWindowsPath(path: Path): WindowsPath;",
+      "returnValue": {
+        "type": "WindowsPath",
+        "description": []
+      },
+      "parameters": {
+        "path": {
+          "name": "path",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "Path"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false
+    },
+    "BaseException": {
+      "kind": "class",
+      "extends": "Error",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": " Copyright Google Inc. All Rights Reserved."
+        },
+        {
+          "kind": "paragraph"
+        },
+        {
+          "kind": "text",
+          "text": "Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at https://angular.io/license"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor(message?: string);",
+          "parameters": {
+            "message": {
+              "name": "message",
+              "description": [],
+              "isOptional": true,
+              "isSpread": false,
+              "type": "string"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "BaseException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "BaseException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        }
+      }
+    },
+    "basename": {
+      "kind": "function",
+      "signature": "export function basename(path: Path): PathFragment;",
+      "returnValue": {
+        "type": "PathFragment",
+        "description": []
+      },
+      "parameters": {
+        "path": {
+          "name": "path",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "Path"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Return the basename of the path, as a Path. See path.basename"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "CircularDependencyFoundException": {
+      "kind": "class",
+      "extends": "BaseException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor();",
+          "parameters": {},
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "CircularDependencyFoundException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "CircularDependencyFoundException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        }
+      }
+    },
+    "clean": {
+      "kind": "function",
+      "signature": "export function clean<T>(array: Array<T | undefined>): Array<T>;",
+      "returnValue": {
+        "type": "Array<T>",
+        "description": []
+      },
+      "parameters": {
+        "array": {
+          "name": "array",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "Array<T | undefined>"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": " Copyright Google Inc. All Rights Reserved."
+        },
+        {
+          "kind": "paragraph"
+        },
+        {
+          "kind": "text",
+          "text": "Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at https://angular.io/license"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "ContentHasMutatedException": {
+      "kind": "class",
+      "extends": "BaseException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor(path: string);",
+          "parameters": {
+            "path": {
+              "name": "path",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "string"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "ContentHasMutatedException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "ContentHasMutatedException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        }
+      }
+    },
+    "deepCopy": {
+      "kind": "function",
+      "signature": "export function deepCopy<T extends any>(value: T): T;",
+      "returnValue": {
+        "type": "T",
+        "description": []
+      },
+      "parameters": {
+        "value": {
+          "name": "value",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "T"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false
+    },
+    "DependencyNotFoundException": {
+      "kind": "class",
+      "extends": "BaseException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor();",
+          "parameters": {},
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "DependencyNotFoundException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "DependencyNotFoundException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        }
+      }
+    },
+    "dirname": {
+      "kind": "function",
+      "signature": "export function dirname(path: Path): Path;",
+      "returnValue": {
+        "type": "Path",
+        "description": []
+      },
+      "parameters": {
+        "path": {
+          "name": "path",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "Path"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Return the dirname of the path, as a Path. See path.dirname"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "experimental": {
+      "kind": "namespace",
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": " Copyright Google Inc. All Rights Reserved."
+        },
+        {
+          "kind": "paragraph"
+        },
+        {
+          "kind": "text",
+          "text": "Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at https://angular.io/license"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "exports": {}
+    },
+    "extname": {
+      "kind": "function",
+      "signature": "export function extname(path: Path): string;",
+      "returnValue": {
+        "type": "string",
+        "description": []
+      },
+      "parameters": {
+        "path": {
+          "name": "path",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "Path"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false
+    },
+    "FileAlreadyExistException": {
+      "kind": "class",
+      "extends": "BaseException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor(path: string);",
+          "parameters": {
+            "path": {
+              "name": "path",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "string"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "FileAlreadyExistException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "FileAlreadyExistException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        }
+      }
+    },
+    "FileDoesNotExistException": {
+      "kind": "class",
+      "extends": "BaseException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor(path: string);",
+          "parameters": {
+            "path": {
+              "name": "path",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "string"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "FileDoesNotExistException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "FileDoesNotExistException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        }
+      }
+    },
+    "fragment": {
+      "kind": "function",
+      "signature": "export function fragment(path: string): PathFragment;",
+      "returnValue": {
+        "type": "PathFragment",
+        "description": []
+      },
+      "parameters": {
+        "path": {
+          "name": "path",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "string"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false
+    },
+    "getSystemPath": {
+      "kind": "function",
+      "signature": "export function getSystemPath(path: Path): string;",
+      "returnValue": {
+        "type": "string",
+        "description": []
+      },
+      "parameters": {
+        "path": {
+          "name": "path",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "Path"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false
+    },
+    "InvalidJsonCharacterException": {
+      "kind": "class",
+      "extends": "JsonException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "A character was invalid in this context."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor(context: JsonParserContext);",
+          "parameters": {
+            "context": {
+              "name": "context",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "JsonParserContext"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "InvalidJsonCharacterException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "InvalidJsonCharacterException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        },
+        "character": {
+          "kind": "property",
+          "signature": "character: number;",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "number",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "invalidChar": {
+          "kind": "property",
+          "signature": "invalidChar: string;",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "line": {
+          "kind": "property",
+          "signature": "line: number;",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "number",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "offset": {
+          "kind": "property",
+          "signature": "offset: number;",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "number",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "InvalidPathException": {
+      "kind": "class",
+      "extends": "BaseException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor(path: string);",
+          "parameters": {
+            "path": {
+              "name": "path",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "string"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "InvalidPathException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "InvalidPathException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        }
+      }
+    },
+    "InvalidUpdateRecordException": {
+      "kind": "class",
+      "extends": "BaseException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor();",
+          "parameters": {},
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "InvalidUpdateRecordException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "InvalidUpdateRecordException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        }
+      }
+    },
+    "isAbsolute": {
+      "kind": "function",
+      "signature": "export function isAbsolute(p: Path): boolean;",
+      "returnValue": {
+        "type": "boolean",
+        "description": []
+      },
+      "parameters": {
+        "p": {
+          "name": "p",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "Path"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Returns true if a path is absolute."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "isJsonArray": {
+      "kind": "function",
+      "signature": "export function isJsonArray(value: JsonValue): value is JsonArray;",
+      "returnValue": {
+        "type": "value is JsonArray",
+        "description": []
+      },
+      "parameters": {
+        "value": {
+          "name": "value",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "JsonValue"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false
+    },
+    "isJsonObject": {
+      "kind": "function",
+      "signature": "export function isJsonObject(value: JsonValue): value is JsonObject;",
+      "returnValue": {
+        "type": "value is JsonObject",
+        "description": []
+      },
+      "parameters": {
+        "value": {
+          "name": "value",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "JsonValue"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false
+    },
+    "isObservable": {
+      "kind": "function",
+      "signature": "export function isObservable(obj: any | Observable<any>): obj is Observable<any>;",
+      "returnValue": {
+        "type": "obj is Observable<any>",
+        "description": []
+      },
+      "parameters": {
+        "obj": {
+          "name": "obj",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "any | Observable<any>"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Determine if the argument is an Observable"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "isPromise": {
+      "kind": "function",
+      "signature": "export function isPromise(obj: any): obj is Promise<any>;",
+      "returnValue": {
+        "type": "obj is Promise<any>",
+        "description": []
+      },
+      "parameters": {
+        "obj": {
+          "name": "obj",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "any"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Determine if the argument is shaped like a Promise"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "join": {
+      "kind": "function",
+      "signature": "export function join(p1: Path, ...others: string[]): Path;",
+      "returnValue": {
+        "type": "Path",
+        "description": []
+      },
+      "parameters": {
+        "p1": {
+          "name": "p1",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "Path"
+        },
+        "others": {
+          "name": "others",
+          "description": [],
+          "isOptional": false,
+          "isSpread": true,
+          "type": "string[]"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Join multiple paths together, and normalize the result. Accepts strings that will be normalized as well (but the original must be a path)."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "json": {
+      "kind": "namespace",
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": " Copyright Google Inc. All Rights Reserved."
+        },
+        {
+          "kind": "paragraph"
+        },
+        {
+          "kind": "text",
+          "text": "Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at https://angular.io/license"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "exports": {}
+    },
+    "JsonArray": {
+      "kind": "interface",
+      "extends": "Array",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false
+    },
+    "JsonAstArray": {
+      "kind": "interface",
+      "extends": "JsonAstNodeBase",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "elements": {
+          "kind": "property",
+          "signature": "readonly elements: JsonAstNode[];",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "JsonAstNode[]",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "kind": {
+          "kind": "property",
+          "signature": "readonly kind: 'array';",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "'array'",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "value": {
+          "kind": "property",
+          "signature": "readonly value: JsonArray;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "JsonArray",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "JsonAstComment": {
+      "kind": "interface",
+      "extends": "JsonAstNodeBase",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "content": {
+          "kind": "property",
+          "signature": "readonly content: string;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "kind": {
+          "kind": "property",
+          "signature": "readonly kind: 'comment';",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "'comment'",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "JsonAstConstantFalse": {
+      "kind": "interface",
+      "extends": "JsonAstNodeBase",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "kind": {
+          "kind": "property",
+          "signature": "readonly kind: 'false';",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "'false'",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "value": {
+          "kind": "property",
+          "signature": "readonly value: false;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "false",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "JsonAstConstantNull": {
+      "kind": "interface",
+      "extends": "JsonAstNodeBase",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "kind": {
+          "kind": "property",
+          "signature": "readonly kind: 'null';",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "'null'",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "value": {
+          "kind": "property",
+          "signature": "readonly value: null;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "null",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "JsonAstConstantTrue": {
+      "kind": "interface",
+      "extends": "JsonAstNodeBase",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "kind": {
+          "kind": "property",
+          "signature": "readonly kind: 'true';",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "'true'",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "value": {
+          "kind": "property",
+          "signature": "readonly value: true;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "true",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "JsonAstIdentifier": {
+      "kind": "interface",
+      "extends": "JsonAstNodeBase",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "kind": {
+          "kind": "property",
+          "signature": "readonly kind: 'identifier';",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "'identifier'",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "value": {
+          "kind": "property",
+          "signature": "readonly value: string;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "JsonAstKeyValue": {
+      "kind": "interface",
+      "extends": "JsonAstNodeBase",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "key": {
+          "kind": "property",
+          "signature": "readonly key: JsonAstString | JsonAstIdentifier;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "JsonAstString | JsonAstIdentifier",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "kind": {
+          "kind": "property",
+          "signature": "readonly kind: 'keyvalue';",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "'keyvalue'",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "value": {
+          "kind": "property",
+          "signature": "readonly value: JsonAstNode;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "JsonAstNode",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "JsonAstMultilineComment": {
+      "kind": "interface",
+      "extends": "JsonAstNodeBase",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "content": {
+          "kind": "property",
+          "signature": "readonly content: string;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "kind": {
+          "kind": "property",
+          "signature": "readonly kind: 'multicomment';",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "'multicomment'",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "JsonAstNodeBase": {
+      "kind": "interface",
+      "extends": "",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "comments": {
+          "kind": "property",
+          "signature": "readonly comments?: (JsonAstComment | JsonAstMultilineComment)[];",
+          "isOptional": true,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "(JsonAstComment | JsonAstMultilineComment)[]",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "end": {
+          "kind": "property",
+          "signature": "readonly end: Position;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "Position",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "start": {
+          "kind": "property",
+          "signature": "readonly start: Position;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "Position",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "text": {
+          "kind": "property",
+          "signature": "readonly text: string;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "JsonAstNumber": {
+      "kind": "interface",
+      "extends": "JsonAstNodeBase",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "kind": {
+          "kind": "property",
+          "signature": "readonly kind: 'number';",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "'number'",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "value": {
+          "kind": "property",
+          "signature": "readonly value: number;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "number",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "JsonAstObject": {
+      "kind": "interface",
+      "extends": "JsonAstNodeBase",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "kind": {
+          "kind": "property",
+          "signature": "readonly kind: 'object';",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "'object'",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "properties": {
+          "kind": "property",
+          "signature": "readonly properties: JsonAstKeyValue[];",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "JsonAstKeyValue[]",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "value": {
+          "kind": "property",
+          "signature": "readonly value: JsonObject;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "JsonObject",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "JsonAstString": {
+      "kind": "interface",
+      "extends": "JsonAstNodeBase",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "kind": {
+          "kind": "property",
+          "signature": "readonly kind: 'string';",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "'string'",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "value": {
+          "kind": "property",
+          "signature": "readonly value: string;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "JsonException": {
+      "kind": "class",
+      "extends": "BaseException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false
+    },
+    "JsonObject": {
+      "kind": "interface",
+      "extends": "",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__index": {
+          "kind": "method",
+          "signature": "[prop: string]: JsonValue;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": false,
+          "returnValue": {
+            "type": "JsonValue",
+            "description": []
+          },
+          "parameters": {
+            "prop": {
+              "name": "prop",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "string"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        }
+      }
+    },
+    "JsonParseMode": {
+      "kind": "enum",
+      "values": {
+        "CommentsAllowed": {
+          "kind": "enum value",
+          "value": "1",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "Default": {
+          "kind": "enum value",
+          "value": "0",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "HexadecimalNumberAllowed": {
+          "kind": "enum value",
+          "value": "16",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "IdentifierKeyNamesAllowed": {
+          "kind": "enum value",
+          "value": "4",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "Json": {
+          "kind": "enum value",
+          "value": "0",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "Json5": {
+          "kind": "enum value",
+          "value": "255",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "LaxNumberParsingAllowed": {
+          "kind": "enum value",
+          "value": "64",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "Loose": {
+          "kind": "enum value",
+          "value": "255",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "MultiLineStringAllowed": {
+          "kind": "enum value",
+          "value": "32",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "NumberConstantsAllowed": {
+          "kind": "enum value",
+          "value": "128",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "SingleQuotesAllowed": {
+          "kind": "enum value",
+          "value": "2",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "Strict": {
+          "kind": "enum value",
+          "value": "0",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "TrailingCommasAllowed": {
+          "kind": "enum value",
+          "value": "8",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "The Parse mode used for parsing the JSON string."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "JsonParserContext": {
+      "kind": "interface",
+      "extends": "",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Context passed around the parser with information about where we currently are in the parse."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "mode": {
+          "kind": "property",
+          "signature": "readonly mode: JsonParseMode;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "JsonParseMode",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "original": {
+          "kind": "property",
+          "signature": "readonly original: string;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "position": {
+          "kind": "property",
+          "signature": "position: Position;",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "Position",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "previous": {
+          "kind": "property",
+          "signature": "previous: Position;",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "Position",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "logging": {
+      "kind": "namespace",
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": " Copyright Google Inc. All Rights Reserved."
+        },
+        {
+          "kind": "paragraph"
+        },
+        {
+          "kind": "text",
+          "text": "Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at https://angular.io/license"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "exports": {}
+    },
+    "mapObject": {
+      "kind": "function",
+      "signature": "export function mapObject<T, V>(obj: {\n    [k: string]: T;\n}, mapper: (k: string, v: T) => V): {\n    [k: string]: V;\n};",
+      "returnValue": {
+        "type": "{\n    [k: string]: V;\n}",
+        "description": []
+      },
+      "parameters": {
+        "obj": {
+          "name": "obj",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "{\n    [k: string]: T;\n}"
+        },
+        "mapper": {
+          "name": "mapper",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "(k: string, v: T) => V"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": " Copyright Google Inc. All Rights Reserved."
+        },
+        {
+          "kind": "paragraph"
+        },
+        {
+          "kind": "text",
+          "text": "Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at https://angular.io/license"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "MergeConflictException": {
+      "kind": "class",
+      "extends": "BaseException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor(path: string);",
+          "parameters": {
+            "path": {
+              "name": "path",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "string"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "MergeConflictException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "MergeConflictException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        }
+      }
+    },
+    "noCacheNormalize": {
+      "kind": "function",
+      "signature": "export function noCacheNormalize(path: string): Path;",
+      "returnValue": {
+        "type": "Path",
+        "description": []
+      },
+      "parameters": {
+        "path": {
+          "name": "path",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "string"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "The no cache version of the normalize() function. Used for benchmarking and testing."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "normalize": {
+      "kind": "function",
+      "signature": "export function normalize(path: string): Path;",
+      "returnValue": {
+        "type": "Path",
+        "description": []
+      },
+      "parameters": {
+        "path": {
+          "name": "path",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "string"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Normalize a string into a Path. This is the only mean to get a Path type from a string that represents a system path. This method cache the results as real world paths tend to be duplicated often. Normalization includes: - Windows backslashes "
+        },
+        {
+          "kind": "code",
+          "text": "\\\\",
+          "highlighter": "plain"
+        },
+        {
+          "kind": "text",
+          "text": " are replaced with "
+        },
+        {
+          "kind": "code",
+          "text": "/",
+          "highlighter": "plain"
+        },
+        {
+          "kind": "text",
+          "text": ". - Windows drivers are replaced with "
+        },
+        {
+          "kind": "code",
+          "text": "/X/",
+          "highlighter": "plain"
+        },
+        {
+          "kind": "text",
+          "text": ", where X is the drive letter. - Absolute paths starts with "
+        },
+        {
+          "kind": "code",
+          "text": "/",
+          "highlighter": "plain"
+        },
+        {
+          "kind": "text",
+          "text": ". - Multiple "
+        },
+        {
+          "kind": "code",
+          "text": "/",
+          "highlighter": "plain"
+        },
+        {
+          "kind": "text",
+          "text": " are replaced by a single one. - Path segments "
+        },
+        {
+          "kind": "code",
+          "text": ".",
+          "highlighter": "plain"
+        },
+        {
+          "kind": "text",
+          "text": " are removed. - Path segments "
+        },
+        {
+          "kind": "code",
+          "text": "..",
+          "highlighter": "plain"
+        },
+        {
+          "kind": "text",
+          "text": " are resolved. - If a path is absolute, having a "
+        },
+        {
+          "kind": "code",
+          "text": "..",
+          "highlighter": "plain"
+        },
+        {
+          "kind": "text",
+          "text": " at the start is invalid (and will throw)."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "parseJson": {
+      "kind": "function",
+      "signature": "export function parseJson(input: string, mode?: JsonParseMode, options?: ParseJsonOptions): JsonValue;",
+      "returnValue": {
+        "type": "JsonValue",
+        "description": [
+          {
+            "kind": "text",
+            "text": "{JsonValue} The value represented by the JSON string."
+          }
+        ]
+      },
+      "parameters": {
+        "input": {
+          "name": "input",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "string"
+        },
+        "mode": {
+          "name": "mode",
+          "description": [],
+          "isOptional": true,
+          "isSpread": false,
+          "type": "JsonParseMode"
+        },
+        "options": {
+          "name": "options",
+          "description": [],
+          "isOptional": true,
+          "isSpread": false,
+          "type": "ParseJsonOptions"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Parse a JSON string into its value. This discards the AST and only returns the value itself."
+        },
+        {
+          "kind": "paragraph"
+        },
+        {
+          "kind": "text",
+          "text": "If a path option is pass, it also absorbs JSON parsing errors and return a new error with the path in it. Useful for showing errors when parsing from a file."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "parseJsonAst": {
+      "kind": "function",
+      "signature": "export function parseJsonAst(input: string, mode?: JsonParseMode): JsonAstNode;",
+      "returnValue": {
+        "type": "JsonAstNode",
+        "description": [
+          {
+            "kind": "text",
+            "text": "{JsonAstNode} The root node of the value of the AST."
+          }
+        ]
+      },
+      "parameters": {
+        "input": {
+          "name": "input",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "string"
+        },
+        "mode": {
+          "name": "mode",
+          "description": [],
+          "isOptional": true,
+          "isSpread": false,
+          "type": "JsonParseMode"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Parse the JSON string and return its AST. The AST may be losing data (end comments are discarded for example, and space characters are not represented in the AST), but all values will have a single node in the AST (a 1-to-1 mapping)."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "PartiallyOrderedSet": {
+      "kind": "class",
+      "extends": "",
+      "implements": "Set",
+      "typeParameters": [
+        "T"
+      ],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "_checkCircularDependencies": {
+          "kind": "method",
+          "signature": "protected _checkCircularDependencies(item: T, deps: Set<T>): void;",
+          "accessModifier": "protected",
+          "isOptional": false,
+          "isStatic": false,
+          "returnValue": {
+            "type": "void",
+            "description": []
+          },
+          "parameters": {
+            "item": {
+              "name": "item",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "T"
+            },
+            "deps": {
+              "name": "deps",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "Set<T>"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        },
+        "add": {
+          "kind": "method",
+          "signature": "add(item: T, deps?: (Set<T> | T[])): this;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": false,
+          "returnValue": {
+            "type": "this",
+            "description": []
+          },
+          "parameters": {
+            "item": {
+              "name": "item",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "T"
+            },
+            "deps": {
+              "name": "deps",
+              "description": [],
+              "isOptional": true,
+              "isSpread": false,
+              "type": "(Set<T> | T[])"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        },
+        "clear": {
+          "kind": "method",
+          "signature": "clear(): void;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": false,
+          "returnValue": {
+            "type": "void",
+            "description": []
+          },
+          "parameters": {},
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        },
+        "delete": {
+          "kind": "method",
+          "signature": "delete(item: T): boolean;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": false,
+          "returnValue": {
+            "type": "boolean",
+            "description": []
+          },
+          "parameters": {
+            "item": {
+              "name": "item",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "T"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        },
+        "entries": {
+          "kind": "method",
+          "signature": "entries(): IterableIterator<[T, T]>;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": false,
+          "returnValue": {
+            "type": "IterableIterator<[T, T]>",
+            "description": []
+          },
+          "parameters": {},
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Returns an iterable of [v,v] pairs for every value "
+            },
+            {
+              "kind": "code",
+              "text": "v",
+              "highlighter": "plain"
+            },
+            {
+              "kind": "text",
+              "text": " in the set."
+            }
+          ],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        },
+        "forEach": {
+          "kind": "method",
+          "signature": "forEach(callbackfn: (value: T, value2: T, set: PartiallyOrderedSet<T>) => void, thisArg?: any): void;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": false,
+          "returnValue": {
+            "type": "void",
+            "description": []
+          },
+          "parameters": {
+            "callbackfn": {
+              "name": "callbackfn",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "(value: T, value2: T, set: PartiallyOrderedSet<T>) => void"
+            },
+            "thisArg": {
+              "name": "thisArg",
+              "description": [],
+              "isOptional": true,
+              "isSpread": false,
+              "type": "any"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        },
+        "has": {
+          "kind": "method",
+          "signature": "has(item: T): boolean;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": false,
+          "returnValue": {
+            "type": "boolean",
+            "description": []
+          },
+          "parameters": {
+            "item": {
+              "name": "item",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "T"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        },
+        "keys": {
+          "kind": "method",
+          "signature": "keys(): IterableIterator<T>;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": false,
+          "returnValue": {
+            "type": "IterableIterator<T>",
+            "description": []
+          },
+          "parameters": {},
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Despite its name, returns an iterable of the values in the set,"
+            }
+          ],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        },
+        "size": {
+          "kind": "property",
+          "signature": "readonly size: number;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "number",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "values": {
+          "kind": "method",
+          "signature": "values(): IterableIterator<T>;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": false,
+          "returnValue": {
+            "type": "IterableIterator<T>",
+            "description": []
+          },
+          "parameters": {},
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Returns an iterable of values in the set."
+            }
+          ],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        }
+      }
+    },
+    "PathCannotBeFragmentException": {
+      "kind": "class",
+      "extends": "BaseException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor(path: string);",
+          "parameters": {
+            "path": {
+              "name": "path",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "string"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "PathCannotBeFragmentException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "PathCannotBeFragmentException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        }
+      }
+    },
+    "PathIsDirectoryException": {
+      "kind": "class",
+      "extends": "BaseException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor(path: string);",
+          "parameters": {
+            "path": {
+              "name": "path",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "string"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "PathIsDirectoryException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "PathIsDirectoryException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        }
+      }
+    },
+    "PathIsFileException": {
+      "kind": "class",
+      "extends": "BaseException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor(path: string);",
+          "parameters": {
+            "path": {
+              "name": "path",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "string"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "PathIsFileException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "PathIsFileException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        }
+      }
+    },
+    "PathMustBeAbsoluteException": {
+      "kind": "class",
+      "extends": "BaseException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor(path: string);",
+          "parameters": {
+            "path": {
+              "name": "path",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "string"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "PathMustBeAbsoluteException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "PathMustBeAbsoluteException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        }
+      }
+    },
+    "PathSpecificJsonException": {
+      "kind": "class",
+      "extends": "JsonException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "An error happened within a file."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor(path: string, exception: JsonException);",
+          "parameters": {
+            "path": {
+              "name": "path",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "string"
+            },
+            "exception": {
+              "name": "exception",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "JsonException"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "PathSpecificJsonException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "PathSpecificJsonException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        },
+        "exception": {
+          "kind": "property",
+          "signature": "exception: JsonException;",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "JsonException",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "path": {
+          "kind": "property",
+          "signature": "path: string;",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "Position": {
+      "kind": "interface",
+      "extends": "",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": " Copyright Google Inc. All Rights Reserved."
+        },
+        {
+          "kind": "paragraph"
+        },
+        {
+          "kind": "text",
+          "text": "Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at https://angular.io/license"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "character": {
+          "kind": "property",
+          "signature": "readonly character: number;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "number",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "line": {
+          "kind": "property",
+          "signature": "readonly line: number;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "number",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "offset": {
+          "kind": "property",
+          "signature": "readonly offset: number;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "number",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "PriorityQueue": {
+      "kind": "class",
+      "extends": "",
+      "implements": "",
+      "typeParameters": [
+        "T"
+      ],
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Naive priority queue; not intended for large datasets"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor(_comparator: (x: T, y: T) => number);",
+          "parameters": {
+            "_comparator": {
+              "name": "_comparator",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "(x: T, y: T) => number"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "PriorityQueue"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "PriorityQueue",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        },
+        "clear": {
+          "kind": "method",
+          "signature": "clear(): void;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": false,
+          "returnValue": {
+            "type": "void",
+            "description": []
+          },
+          "parameters": {},
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        },
+        "peek": {
+          "kind": "method",
+          "signature": "peek(): T | undefined;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": false,
+          "returnValue": {
+            "type": "T | undefined",
+            "description": []
+          },
+          "parameters": {},
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        },
+        "pop": {
+          "kind": "method",
+          "signature": "pop(): T | undefined;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": false,
+          "returnValue": {
+            "type": "T | undefined",
+            "description": []
+          },
+          "parameters": {},
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        },
+        "push": {
+          "kind": "method",
+          "signature": "push(item: T): void;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": false,
+          "returnValue": {
+            "type": "void",
+            "description": []
+          },
+          "parameters": {
+            "item": {
+              "name": "item",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "T"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        },
+        "size": {
+          "kind": "property",
+          "signature": "readonly size: number;",
+          "isOptional": false,
+          "isReadOnly": true,
+          "isStatic": false,
+          "type": "number",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "toArray": {
+          "kind": "method",
+          "signature": "toArray(): Array<T>;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": false,
+          "returnValue": {
+            "type": "Array<T>",
+            "description": []
+          },
+          "parameters": {},
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        }
+      }
+    },
+    "relative": {
+      "kind": "function",
+      "signature": "export function relative(from: Path, to: Path): Path;",
+      "returnValue": {
+        "type": "Path",
+        "description": []
+      },
+      "parameters": {
+        "from": {
+          "name": "from",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "Path"
+        },
+        "to": {
+          "name": "to",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "Path"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Returns a path such that "
+        },
+        {
+          "kind": "code",
+          "text": "join(from, relative(from, to)) == to",
+          "highlighter": "plain"
+        },
+        {
+          "kind": "text",
+          "text": ". Both paths must be absolute, otherwise it does not make much sense."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "resetNormalizeCache": {
+      "kind": "function",
+      "signature": "export function resetNormalizeCache(): void;",
+      "returnValue": {
+        "type": "void",
+        "description": []
+      },
+      "parameters": {},
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Reset the cache. This is only useful for testing. "
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "resolve": {
+      "kind": "function",
+      "signature": "export function resolve(p1: Path, p2: Path): Path;",
+      "returnValue": {
+        "type": "Path",
+        "description": []
+      },
+      "parameters": {
+        "p1": {
+          "name": "p1",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "Path"
+        },
+        "p2": {
+          "name": "p2",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "Path"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Returns a Path that is the resolution of p2, from p1. If p2 is absolute, it will return p2, otherwise will join both p1 and p2."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "schema": {
+      "kind": "namespace",
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": " Copyright Google Inc. All Rights Reserved."
+        },
+        {
+          "kind": "paragraph"
+        },
+        {
+          "kind": "text",
+          "text": "Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at https://angular.io/license"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "exports": {}
+    },
+    "split": {
+      "kind": "function",
+      "signature": "export function split(path: Path): PathFragment[];",
+      "returnValue": {
+        "type": "PathFragment[]",
+        "description": [
+          {
+            "kind": "text",
+            "text": "{Path[]} An array of path fragments."
+          }
+        ]
+      },
+      "parameters": {
+        "path": {
+          "name": "path",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "Path"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Split a path into multiple path fragments. Each fragments except the last one will end with a path separator."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "strings": {
+      "kind": "namespace",
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Converts a camelized string into all lower case separated by underscores."
+        },
+        {
+          "kind": "paragraph"
+        },
+        {
+          "kind": "text",
+          "text": "```javascript decamelize('innerHTML'); // 'inner_html' decamelize('action_name'); // 'action_name' decamelize('css-class-name'); // 'css-class-name' decamelize('my favorite items'); // 'my favorite items' ```"
+        },
+        {
+          "kind": "paragraph"
+        },
+        {
+          "kind": "text",
+          "text": " decamelize"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "exports": {}
+    },
+    "tags": {
+      "kind": "namespace",
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": " Copyright Google Inc. All Rights Reserved."
+        },
+        {
+          "kind": "paragraph"
+        },
+        {
+          "kind": "text",
+          "text": "Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at https://angular.io/license"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "exports": {}
+    },
+    "template": {
+      "kind": "function",
+      "signature": "export function template<T>(content: string, options?: TemplateOptions): (input: T) => string;",
+      "returnValue": {
+        "type": "(input: T) => string",
+        "description": []
+      },
+      "parameters": {
+        "content": {
+          "name": "content",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "string"
+        },
+        "options": {
+          "name": "options",
+          "description": [],
+          "isOptional": true,
+          "isSpread": false,
+          "type": "TemplateOptions"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "An equivalent of EJS templates, which is based on John Resig's "
+        },
+        {
+          "kind": "code",
+          "text": "tmpl",
+          "highlighter": "plain"
+        },
+        {
+          "kind": "text",
+          "text": " implementation (http://ejohn.org/blog/javascript-micro-templating/) and Laura Doktorova's doT.js (https://github.com/olado/doT)."
+        },
+        {
+          "kind": "paragraph"
+        },
+        {
+          "kind": "text",
+          "text": "This version differs from lodash by removing support from ES6 quasi-literals, and making the code slightly simpler to follow. It also does not depend on any third party, which is nice."
+        },
+        {
+          "kind": "paragraph"
+        },
+        {
+          "kind": "text",
+          "text": "Finally, it supports SourceMap, if you ever need to debug, which is super nice."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "TemplateAst": {
+      "kind": "interface",
+      "extends": "",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "A simple AST for templates. There's only one level of AST nodes, but it's still useful to have the information you're looking for."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "children": {
+          "kind": "property",
+          "signature": "children: TemplateAstNode[];",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "TemplateAstNode[]",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "content": {
+          "kind": "property",
+          "signature": "content: string;",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "fileName": {
+          "kind": "property",
+          "signature": "fileName: string;",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "TemplateAstBase": {
+      "kind": "interface",
+      "extends": "",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "The base, which contains positions."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "end": {
+          "kind": "property",
+          "signature": "end: Position;",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "Position",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "start": {
+          "kind": "property",
+          "signature": "start: Position;",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "Position",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "TemplateAstComment": {
+      "kind": "interface",
+      "extends": "TemplateAstBase",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "A comment node."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "kind": {
+          "kind": "property",
+          "signature": "kind: 'comment';",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "'comment'",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "text": {
+          "kind": "property",
+          "signature": "text: string;",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "TemplateAstContent": {
+      "kind": "interface",
+      "extends": "TemplateAstBase",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "A static content node."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "content": {
+          "kind": "property",
+          "signature": "content: string;",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "kind": {
+          "kind": "property",
+          "signature": "kind: 'content';",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "'content'",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "TemplateAstEscape": {
+      "kind": "interface",
+      "extends": "TemplateAstBase",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "An escape node, which is the code between "
+        },
+        {
+          "kind": "code",
+          "text": "<%- ... %>",
+          "highlighter": "plain"
+        },
+        {
+          "kind": "text",
+          "text": "."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "expression": {
+          "kind": "property",
+          "signature": "expression: string;",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "kind": {
+          "kind": "property",
+          "signature": "kind: 'escape';",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "'escape'",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "TemplateAstEvaluate": {
+      "kind": "interface",
+      "extends": "TemplateAstBase",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "An evaluate node, which is the code between "
+        },
+        {
+          "kind": "code",
+          "text": "<% ... %>",
+          "highlighter": "plain"
+        },
+        {
+          "kind": "text",
+          "text": "."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "expression": {
+          "kind": "property",
+          "signature": "expression: string;",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "kind": {
+          "kind": "property",
+          "signature": "kind: 'evaluate';",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "'evaluate'",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "TemplateAstInterpolate": {
+      "kind": "interface",
+      "extends": "TemplateAstBase",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "An interpolation node, which is the code between "
+        },
+        {
+          "kind": "code",
+          "text": "<%= ... %>",
+          "highlighter": "plain"
+        },
+        {
+          "kind": "text",
+          "text": "."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "expression": {
+          "kind": "property",
+          "signature": "expression: string;",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "kind": {
+          "kind": "property",
+          "signature": "kind: 'interpolate';",
+          "isOptional": false,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "'interpolate'",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "TemplateOptions": {
+      "kind": "interface",
+      "extends": "",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "fileName": {
+          "kind": "property",
+          "signature": "fileName?: string;",
+          "isOptional": true,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "module": {
+          "kind": "property",
+          "signature": "module?: boolean | {\n        exports: {};\n    };",
+          "isOptional": true,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "boolean | {\n        exports: {};\n    }",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "sourceMap": {
+          "kind": "property",
+          "signature": "sourceMap?: boolean;",
+          "isOptional": true,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "boolean",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "sourceRoot": {
+          "kind": "property",
+          "signature": "sourceRoot?: string;",
+          "isOptional": true,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        },
+        "sourceURL": {
+          "kind": "property",
+          "signature": "sourceURL?: string;",
+          "isOptional": true,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "templateParser": {
+      "kind": "function",
+      "signature": "export function templateParser(sourceText: string, fileName: string): TemplateAst;",
+      "returnValue": {
+        "type": "TemplateAst",
+        "description": []
+      },
+      "parameters": {
+        "sourceText": {
+          "name": "sourceText",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "string"
+        },
+        "fileName": {
+          "name": "fileName",
+          "description": [],
+          "isOptional": false,
+          "isSpread": false,
+          "type": "string"
+        }
+      },
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Given a source text (and a fileName), returns a TemplateAst."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false
+    },
+    "terminal": {
+      "kind": "namespace",
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": " Copyright Google Inc. All Rights Reserved."
+        },
+        {
+          "kind": "paragraph"
+        },
+        {
+          "kind": "text",
+          "text": "Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at https://angular.io/license"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "exports": {}
+    },
+    "UnexpectedEndOfInputException": {
+      "kind": "class",
+      "extends": "JsonException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "More input was expected, but we reached the end of the stream."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor(_context: JsonParserContext);",
+          "parameters": {
+            "_context": {
+              "name": "_context",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "JsonParserContext"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "UnexpectedEndOfInputException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "UnexpectedEndOfInputException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        }
+      }
+    },
+    "UnimplementedException": {
+      "kind": "class",
+      "extends": "BaseException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor();",
+          "parameters": {},
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "UnimplementedException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "UnimplementedException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        }
+      }
+    },
+    "UnknownException": {
+      "kind": "class",
+      "extends": "Error",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor(message: string);",
+          "parameters": {
+            "message": {
+              "name": "message",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "string"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "UnknownException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "UnknownException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        }
+      }
+    },
+    "UnsupportedPlatformException": {
+      "kind": "class",
+      "extends": "BaseException",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "__constructor": {
+          "kind": "constructor",
+          "signature": "constructor();",
+          "parameters": {},
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Constructs a new instance of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "UnsupportedPlatformException"
+                }
+              ],
+              "target": {
+                "scopeName": "@angular-devkit",
+                "packageName": "core",
+                "exportName": "UnsupportedPlatformException",
+                "memberName": ""
+              }
+            },
+            {
+              "kind": "text",
+              "text": " class"
+            }
+          ],
+          "remarks": []
+        }
+      }
+    },
+    "virtualFs": {
+      "kind": "namespace",
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": " Copyright Google Inc. All Rights Reserved."
+        },
+        {
+          "kind": "paragraph"
+        },
+        {
+          "kind": "text",
+          "text": "Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at https://angular.io/license"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "exports": {
+        "fileBuffer": {
+          "kind": "module variable",
+          "signature": "fileBuffer: TemplateTag<FileBuffer>",
+          "type": "TemplateTag<FileBuffer>",
+          "value": "",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        }
+      }
+    }
+  }
+}
