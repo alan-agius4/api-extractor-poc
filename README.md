@@ -27,7 +27,7 @@ WARNING: Unsupported export: JsonValue
 ```
 From what I see, `export const` and `export type` are not supported yet.
 
-- Possibly non really errors:
+- Loads of JSDocs/TsDocs errors:
 ```
 src/utils/strings.d.ts(74,9): Expecting a TSDoc tag starting with "{@"
 src/virtual-fs/host/alias.d.ts(54,22): The ">" character should be escaped using a backslash to avoid confusion with an HTML tag
