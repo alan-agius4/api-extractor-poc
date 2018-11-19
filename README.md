@@ -27,13 +27,7 @@ WARNING: Unsupported export: JsonValue
 ```
 From what I see, `export const` and `export type` are not supported yet.
 
-- Loads of JSDocs/TsDocs errors:
-```
-src/utils/strings.d.ts(74,9): Expecting a TSDoc tag starting with "{@"
-src/virtual-fs/host/alias.d.ts(54,22): The ">" character should be escaped using a backslash to avoid confusion with an HTML tag
-src/json/schema/visitor.d.ts(30,38): The "}" character should be escaped using a backslash to avoid confusion with a TSDoc inline tag
-```
-This might be because it's using [AEDoc](https://github.com/Microsoft/web-build-tools/wiki/API-Extractor-~-AEDoc-tags) instead of JSDocs.
+- Loads of JSDocs/TsDocs errors - This might be because it's using [AEDoc](https://github.com/Microsoft/web-build-tools/wiki/API-Extractor-~-AEDoc-tags) instead of JSDocs.
 
 - `The TSDoc tag "@license" is not defined in this configuration`. It seems there is no way to actually configure this (https://github.com/Microsoft/web-build-tools/blob/master/apps/api-extractor/src/extractor/IExtractorConfig.ts). 
 
