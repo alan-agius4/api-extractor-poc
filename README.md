@@ -19,10 +19,11 @@ npm t -- --accept
 
 ## Forseen Issues
 - To strip out experimental APIs from being part of the golden files, need to use `/** @internal @preapproved */`.
-- Some unsupported exports such as;
+- There are a lot of unsupported exports
 ```
 WARNING: Unsupported export: grey
 WARNING: Unsupported export: JsonValue
+...
 ```
 - Possibly non really errors:
 ```
