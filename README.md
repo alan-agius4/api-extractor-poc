@@ -18,7 +18,12 @@ npm t -- --accept
 ```
 
 ## Forseen Issues
-- No way to strip out experimental APIs from being part of the golden files.
+- To strip out experimental APIs from being part of the golden files, need to use `/** @internal @preapproved */`.
+- Some unsupported exports such as;
+```
+WARNING: Unsupported export: grey
+WARNING: Unsupported export: JsonValue
+```
 - Possibly non really errors:
 ```
 src/utils/strings.d.ts(74,9): Expecting a TSDoc tag starting with "{@"
