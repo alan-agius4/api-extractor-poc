@@ -19,12 +19,14 @@ npm t -- --accept
 
 ## Forseen Issues
 - To strip out experimental APIs from being part of the golden files, need to use `/** @internal @preapproved */`.
-- There are a lot of unsupported exports
+- There are a lot of unsupported exports:
 ```
 WARNING: Unsupported export: grey
 WARNING: Unsupported export: JsonValue
 ...
 ```
+From what I see, `export const` and `export type` are not supported yet.
+
 - Possibly non really errors:
 ```
 src/utils/strings.d.ts(74,9): Expecting a TSDoc tag starting with "{@"
